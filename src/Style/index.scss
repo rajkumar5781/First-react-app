@@ -7,6 +7,9 @@
     --text-light: #575757;
     --animation-speed:1;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
     margin: 0;
@@ -63,7 +66,4 @@ text-decoration: none;
 }
 body{
     font-size: var(--font-size);
-}
-.container{
-    padding-inline: 15vw;
 }

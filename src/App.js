@@ -1,14 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Counter } from './Counter';
-import Multiple from './Multiple';
-import {Navbar} from './Navbar'
+import Login from './Components/Login';
 
 function App() {
   return (
     <>
-    <Navbar></Navbar>
-    <Counter></Counter>
-    <Multiple></Multiple>
+    {/* <Navbar></Navbar> */}
+    <Routes>
+      <Route path='/login' element={<Login/>}></Route>
+    </Routes>
     </>
   );
 }
